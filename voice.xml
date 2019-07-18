@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say voice="alice">
+        Welcome to SDFC Bank, you are shortlisted for Term Deposit Inclination.
+    </Say>
+    <Pause length="1"/>
+
+    <Gather input="speech dtmf" timeout="3" numDigits="1">
+        <Say>Press 1 for Short Term Deposit.Press 2 for Long Term Deposit .</Say>
+    </Gather>
+
+    <Say voice="alice">
+        sorry, we didnt get a proper response!.Thank you for your feedback, have a nice day.    
+    </Say>
+    
+</Response>
