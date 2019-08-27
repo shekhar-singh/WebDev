@@ -1,0 +1,159 @@
+<html>
+<head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <style>
+                .cards-list {
+                  z-index: 0;
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-around;
+                  flex-wrap: wrap;
+                }
+                
+                .card {
+                  margin: 30px auto;
+                  width: 250px;
+                  height: 250px;
+                  border-radius: 10px;
+                box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+                  cursor: pointer;
+                  transition: .5s;
+                }
+                
+                .card .card_image {
+                  width: inherit;
+                  height: inherit;
+                  border-radius: 10px;
+                }
+                
+                .card .card_image img {
+                  width: inherit;
+                  height: inherit;
+                  border-radius: 10px;
+                  object-fit: cover;
+                }
+                
+                .card .card_title {
+                  text-align: center;
+                  border-radius: 0px 0px 40px 40px;
+                  font-family: sans-serif;
+                  font-weight: bold;
+                  font-size: 30px;
+                  margin-top: -40px;
+                  height: 40px;
+                }
+                
+                .card:hover {
+                  transform: scale(1.1,1.1);
+                  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+                    -5px -5px 30px 15px rgba(0,0,0,0.22);
+                }
+                
+                .title-white {
+                  color: rgb(224, 240, 155);
+                }
+                
+                .title-black {
+                  color: black;
+                }
+                
+                @media all and (max-width: 500px) {
+                  .card-list {
+                    /* On small screens, we are no longer using row direction but column */
+                    flex-direction: column;
+                  }
+                }
+                
+                
+                
+                /* .card {
+                  margin: 30px auto;
+                  width: 300px;
+                  height: 300px;
+                  border-radius: 40px;
+                  background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+                  transition: 0.4s;
+                } */
+                
+                </style>
+
+</head>
+<body>
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                  </div>
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Page 1-1</a></li>
+
+                      </ul>
+                    </li>
+                    <li><a href="#">Page 2</a></li>
+                  </ul> -->
+                <!--   added by me -->
+            </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  </ul>
+                </div>
+              </nav>
+                
+              <div class="container">
+
+    
+<div class="cards-list">
+  
+<div class="card 1">
+  <div class="card_image"> <img src="C:\Users\shekchou\Pictures\ivr images\create.png" /> </div>
+  <div class="card_title title-black">
+    <!-- <p>Create Contact</p> -->
+  </div>
+</div>
+
+  <div class="card 2">
+  <div class="card_image">
+    <img src="C:\Users\shekchou\Pictures\ivr images\book.jpg" />
+    </div>
+  <div class="card_title title-black">
+    <!-- <p>Contact Book</p> -->
+  </div>
+</div>
+
+<div class="card 3">
+  <div class="card_image">
+    <img src="https://media.giphy.com/media/nwCSH6KWIfH9qdbQo9/source.gif" />
+  </div>
+  <div class="card_title title-white">
+    <p>IVR</p>
+  </div>
+</div>
+  
+  <div class="card 4">
+  <div class="card_image">
+    <img src="C:\Users\shekchou\Pictures\ivr images\cc.jpg" />
+    </div>
+  <div class="card_title title-black">
+    <!-- <p>Call Center</p> -->
+  </div>
+  </div>
+
+</div>
+
+</div>
+</body>
+</html>
